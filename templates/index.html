@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sephora Scrapper</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="/static/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/static/css/stylish-portfolio.css" rel="stylesheet">
+    <link href="/static/css/sephora.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#page-top">Sephora Scrapper</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#page-top">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#from-homepage">From homepage</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#from-menu">From menus</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead d-flex">
+      <div class="container text-center my-auto title-sephora">
+        <h1 class="mb-1">Sephora Scrapper</h1>
+        <h3 class="mb-5">
+          <em>Retrieve data from sephora websites</em>
+        </h3>
+      </div>
+      <div class="overlay"></div>
+    </header>
+
+    <!-- From Homepage -->
+    <section class="content-section bg-light" id="from-homepage">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Extract data from homepage</h2>
+            <p class="lead mb-5">Images to extract from homepage</p>
+            <a class="btn btn-dark btn-xl js-scroll-trigger" id="home-extraction">Extract!</a>
+
+            <div class="results"></div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- From Homepage -->
+    <section class="content-section" id="from-menu">
+      <div class="container text-center from-menu-container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Extract data from top menu</h2>
+            <p class="lead mb-5">Images and promos to extract from navigation menu</p>
+            <a class="btn btn-light btn-xl js-scroll-trigger" id="promo-extraction" style="color:black">Extract!</a>
+            <div id="promo-results">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <p class="text-muted small mb-0">Sabine Dauger 2018</p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="/static/js/stylish-portfolio.min.js"></script>
+    <script src="/static/js/sephora.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,41 @@
+.title-sephora{
+  background-color: rgba(255, 255, 255, 0.8);
+  vertical-align: middle;
+  border-radius:200px;
+}
+
+
+
+#sidebar-wrapper{
+  background-color:black;
+}
+
+
+
+#from-menu{
+  background-color:black;
+  color:white;
+}
+
+
+
+
+/* CAROUSEL*/
+
+.promo-result{
+  padding:15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin:30px;
+}
+
+.img-promo-container{
+  margin: auto;
+}
+
+.img-promo-result{
+  border-radius:100%;
+  width:200px;
+  height:200px;
+}
+
+
