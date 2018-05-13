@@ -114,13 +114,25 @@ def test_ajax():
     return jsonify(response)
 
 
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
+
+
 @app.route("/sephora/promos",methods = ["POST"])
 def get_promos():
 
-    scrapper = sephora.SephoraScrapper("CZ")
-    blocks = scrapper.get_promo_blocks()
+    scrapper = sephora.SephoraScrapper("FR")
+
+    scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive.file',"https://www.googleapis.com/auth/drive"]
+    creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
+    client = gspread.authorize(creds)
+
+    sheet = client.open("Sephora scrapper data").sheet1
+
+    blocks = scrapper.get_promo_blocks(sheet)
 
     response = {"status":"OK","data":blocks}
+    
     return jsonify(response)
 
 
